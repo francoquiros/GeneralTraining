@@ -1,0 +1,63 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.css
+ *
+ * Author:      fquiros@akurey.com
+ * Date:        30/07/2019
+ * Description: Styles for training 441.
+ */
+
+
+.main-container {
+    text-align: center;  
+    margin: 0 200px;
+    border: 3px solid black;
+}
+
+.box {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: 1px;
+    vertical-align: top;
+    width: 200px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 10px;
+ }
+
+ .box__icon {
+    text-align: center;
+}
+
+.facebook {
+    background: rgb(59, 89, 152);
+    font-family: 'Franklin Gothic Medium';
+}
+
+.facebook__icon {
+    margin-top: 100px
+}
+
+.twitter {
+    background: rgb(92, 185, 211);
+    font-family: 'Trebuchet MS';
+}
+
+.twitter__icon {
+    margin-top: 40px;
+}
+
+
+.instagram {
+    background: brown;
+    font-family:Acme;
+}
+
+a:hover { 
+    color: white;
+  }
