@@ -1,0 +1,161 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _content.scss
+//
+
+// *
+// * Author:      kchaves@intelligentsense.com
+// * Date:        28/10/2013
+// * Description: Content partial. Add here all the classes for the content
+//                of the site, divided by section.
+// 
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #221;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+h1 {
+    font-family: $font-regular;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    margin: 0;
+    justify-content: center;
+    article {
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    aside {
+        color: white;
+        padding: 0px 5% 10px;
+    }
+}
+
+.block {
+    font-family: Arial;
+    flex-grow: 1;
+    align-items:center;
+    color: #000;
+    max-width: 338px;
+    padding: 22px;
+    &__title {
+        margin: 9px;
+        border-bottom: 1px solid #D8D8D8;
+        &--icon{
+            width: 31px;
+            height: 31px;
+            float: right;
+        }
+    }
+
+    &__image {
+        width: 126px;
+        height: 117px;
+        margin-left: 9px;
+        border: 1px solid #D8D8D8;
+        box-sizing: border-box;
+    }
+
+    &__paragraph {
+        width: 172px;
+        float: right;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        margin: 0;
+    }
+
+    &__footer {
+        font-size: 14px;
+        line-height: 34px;
+        margin: 12px;
+        margin-left: 9px;
+        font-weight: bold; 
+        vertical-align: middle;
+        p {
+            width: 50%;
+            float: left;
+            text-align: left;
+        }
+        a {
+            display: block;
+            width: 50%;
+            float: right;
+            color: #fff;
+            background: #000;
+            border-radius: 18px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        a:hover,
+        a:visited {
+            color: white;
+        }
+    }
+
+    
+}
+
