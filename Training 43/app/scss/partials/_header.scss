@@ -13,6 +13,14 @@
 //                of the site.
 // 
 
+header {
+    label, 
+    #hamburger {
+        display: none;
+        width: 53px;
+    }
+}
+
 nav { 
 
     ul {
@@ -43,4 +51,5 @@ nav {
     }
 
 }
+
 

@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  transform: translate(0, -25%);
 }
 
 .header-container,
@@ -121,6 +122,13 @@
 
 .nav__logo {
   padding-left: 19px;
+  justify-content: left;
+}
+
+header label,
+header #hamburger {
+  display: none;
+  width: 53px;
 }
 
 nav ul {
@@ -302,6 +310,56 @@ body {
 .block__footer a:hover,
 .block__footer a:visited {
   color: white;
+}
+
+.search-mobile {
+  width: 238px;
+  height: 56px;
+  left: calc(50% - 238px/2 - 34px);
+  top: 396px;
+  font-family: Arial;
+  font-size: 24px;
+  line-height: 28px;
+  display: none;
+  color: #000000;
+}
+.search-mobile__paragraph {
+  padding-left: 10px;
+}
+.search-mobile__input {
+  margin: 0 10%;
+  padding-left: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  width: 303px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: url("../../images/lupa.png") no-repeat right center;
+}
+
+.search-banner {
+  font-family: Arial;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  display: inline-block;
+  transform: translate(5%, -125%);
+  width: 100%;
+}
+.search-banner__input {
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 21px;
+  width: 663px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: url("../../images/lupa.png") no-repeat right center;
 }
 
 /* ==========================================================================
@@ -490,5 +548,36 @@ body {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+@media screen and (max-width: 767px) {
+  header label {
+    display: block;
+    color: #fff;
+    width: 53px;
+    float: right;
+    padding-top: 17px;
+  }
+  header ul li {
+    display: block;
+    border-top: 1px solid #333;
+  }
+  header ul {
+    display: none;
+  }
+  header input:checked ~ ul {
+    display: block;
+  }
+
+  .main {
+    transform: translate(0, 0);
+  }
+
+  .search-banner {
+    display: none;
+  }
+
+  .search-mobile {
+    display: inline-block;
   }
 }

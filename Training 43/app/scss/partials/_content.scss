@@ -140,7 +140,7 @@ body {
             text-align: left;
         }
         a {
-            display: block;
+            display: block; 
             width: 50%;
             float: right;
             color: #fff;
@@ -155,7 +155,58 @@ body {
             color: white;
         }
     }
-
     
+}
+
+.search-mobile {
+    width: 238px;
+    height: 56px;
+    left: calc(50% - 238px/2 - 34px);
+    top: 396px;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 28px;
+    display: none;
+    color: #000000;
+
+    &__paragraph {
+        padding-left: 10px;
+    }
+    
+    &__input {
+        margin: 0 10%;
+        padding-left: 15px;
+        font-size: 18px;
+        line-height: 21px;
+        width: 303px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #8E8E8E;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: url('../../images/lupa.png') no-repeat right center;
+    }
+}
+
+.search-banner {
+    font-family: Arial;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    display: inline-block;
+    transform: translate(5%,-125%);
+    width: 100%;
+    &__input {
+        padding-left: 16px;
+        font-size: 18px;
+        line-height: 21px;
+        width: 663px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #8E8E8E;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: url('../../images/lupa.png') no-repeat right center;
+    }
 }
 
