@@ -56,25 +56,10 @@
                     <p class="search-mobile__paragraph">Los Mejores agentes de seguridad</p>
                     <input class="search-mobile__input" type="text" placeholder="Buscar por Ubicación">
                 </div>
+
             <div class="main" id="agent-container">
-                
-                <script id="agentTpl" type="text/template">
-                    {{#companies}}
-                        <div class="block">
-                            <h1 class="block__title">{{name}}
-                                <img class="block__title--icon" src="images/certified.png" alt="Certified">
-                            </h1>
-                            <img class="block__image" src="{{image}}" 
-                            alt="Foto de {{name}}">
-                            <p class="block__paragraph">{{description}}</p>
-                            <div class="block__footer">
-                                Desde: ${{rate}}/ {{hours}} horas
-                                <a href="#">Contratar</a>
-                            </div>
-                        </div>
-                    {{/companies}}
-                </script>
             </div> <!-- #main -->
+
         </div> <!-- #main-container -->
 
         <div class="footer-container">
@@ -87,21 +72,26 @@
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/mustache.min.js"></script>
         <script src="js/main.js"></script>
-
-
-        <script>
-            function loadAgents(){
-                $.getJSON('data.json', function(data) {
-                    var template = $('#agentTpl').html();
-                    Mustache.parse(template); 
-                    var rendered = Mustache.render(template, data);
-                    $('#agent-container').html(rendered);
-                });
-            }
-        </script>
+        <script src="js/agentLoader.js"></script>
         
 
         <!-- Live reload option. Remove in production environments -->
         <!-- <script src="//localhost:35729/livereload.js"></script>-->
     </body>
+    <script id="agentTpl" type="text/template">
+        {{#companies}}
+            <div class="block">
+                <h1 class="block__title">{{name}}
+                    <img class="block__title--icon" src="images/certified.png" alt="Certified">
+                </h1>
+                <img class="block__image" src="{{image}}" 
+                alt="Foto de {{name}}">
+                <p class="block__paragraph">{{description}}</p>
+                <div class="block__footer">
+                    Desde: ${{rate}}/ {{hours}} horas
+                    <a href="#">Contratar</a>
+                </div>
+            </div>
+        {{/companies}}
+    </script>
 </html>
