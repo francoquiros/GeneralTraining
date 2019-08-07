@@ -1,0 +1,604 @@
+/*!
+ * All Rights Reserved
+ * This software is proprietary information of
+ * Intelligent Sense
+ * Use is subject to license terms.
+ * Filename: style.scss
+ */
+/*
+ * Author:      kchaves@intelligentsense.com
+ * Date:        28/10/2013
+ * Description: Main COMPASS file. Import all the partials you need here.
+ */
+/**
+* Mixin for image replacement
+*/
+/* ===================
+    ALL: Fonts
+   =================== */
+@font-face {
+  font-family: 'IntelligentSense';
+  src: url("../fonts/tgl-31034-1-normschrift.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  clear: both;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+.header-container {
+  border-bottom: #000;
+}
+
+.footer-container,
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transform: translate(0, -25%);
+}
+
+.header-container,
+.footer-container,
+.main aside {
+  background: #000;
+}
+
+.title {
+  color: white;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner__mobile {
+  display: none;
+}
+
+.nav__logo {
+  padding-left: 19px;
+  justify-content: left;
+}
+
+header label,
+header #hamburger {
+  display: none;
+  width: 53px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  font-family: "IntelligentSense", Verdana, Arial, sans;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  padding: 23px 44px;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer-container footer {
+  width: 70%;
+  float: left;
+}
+.footer-container a {
+  display: block;
+  width: 30%;
+  float: right;
+  text-align: end;
+}
+.footer-container a:hover,
+.footer-container a:visited {
+  color: white;
+}
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #221;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+h1 {
+  font-family: "IntelligentSense", Verdana, Arial, sans;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  margin: 0;
+  justify-content: center;
+}
+.main article h1 {
+  font-size: 2em;
+}
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.block {
+  font-family: Arial;
+  flex-grow: 1;
+  align-items: center;
+  color: #000;
+  max-width: 338px;
+  padding: 22px;
+}
+.block__title {
+  margin: 9px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.block__title--icon {
+  width: 31px;
+  height: 31px;
+  float: right;
+}
+.block__image {
+  width: 126px;
+  height: 117px;
+  margin-left: 9px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+}
+.block__paragraph {
+  width: 172px;
+  float: right;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+  margin: 0;
+}
+.block__footer {
+  font-size: 14px;
+  line-height: 34px;
+  margin: 12px;
+  margin-left: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.block__footer p {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.block__footer a {
+  display: block;
+  width: 50%;
+  float: right;
+  color: #fff;
+  background: #000;
+  border-radius: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+.block__footer a:hover,
+.block__footer a:visited {
+  color: white;
+}
+
+.search-mobile {
+  width: 238px;
+  height: 56px;
+  left: calc(50% - 238px/2 - 34px);
+  top: 396px;
+  font-family: Arial;
+  font-size: 24px;
+  line-height: 28px;
+  display: none;
+  color: #000000;
+}
+.search-mobile :focus {
+  outline: none;
+}
+.search-mobile__paragraph {
+  padding-left: 10px;
+}
+.search-mobile__input {
+  margin: 0 10%;
+  padding-left: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  width: 303px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.search-mobile__button {
+  height: 44px;
+  width: 44px;
+  border: none;
+  background: url("../../images/lupa.png");
+  transform: translate(650%, -100%);
+}
+
+.search-banner {
+  font-family: Arial;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  display: inline-block;
+  transform: translate(5%, -125%);
+  width: 100%;
+}
+.search-banner :focus {
+  outline: none;
+}
+.search-banner__input {
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 21px;
+  width: 663px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #8E8E8E;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.search-banner__button {
+  height: 44px;
+  width: 44px;
+  border: none;
+  background: url("../../images/lupa.png");
+  transform: translate(-120%, 35%);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-width: 768px) {
+  .banner__mobile {
+    display: block;
+  }
+
+  .banner__regular {
+    display: none;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+  /* Styles */
+  .main {
+    margin-top: 80px;
+  }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+@media only screen and (max-width: 1224px) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* Retina Display ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+  nav li:first-child a {
+    margin-left: 0;
+  }
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  .header-container,
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+@media screen and (max-width: 767px) {
+  header label {
+    display: block;
+    color: #fff;
+    width: 53px;
+    float: right;
+    padding-top: 17px;
+  }
+  header ul li {
+    display: block;
+    border-top: 1px solid #333;
+  }
+  header ul {
+    display: none;
+  }
+  header input:checked ~ ul {
+    display: block;
+  }
+
+  .main {
+    transform: translate(0, 0);
+  }
+
+  .search-banner {
+    display: none;
+  }
+
+  .search-mobile {
+    display: inline-block;
+  }
+}

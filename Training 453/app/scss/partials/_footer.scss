@@ -1,0 +1,44 @@
+//
+// * All Rights Reserved
+// * This software is proprietary information of
+// * Intelligent Sense
+// * Use is subject to license terms.
+// * Filename: _footer.scss
+//
+
+// *
+// * Author:      kchaves@intelligentsense.com
+// * Date:        28/10/2013
+// * Description: Footer partial. Add here the classes for the footer of the site.
+// 
+
+
+.footer-container {
+
+    padding: 23px 44px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    footer {
+        width: 70%;
+        float: left;
+    }
+
+    a {
+        display: block;
+        width: 30%;
+        float: right;
+        text-align: end;
+    }
+
+    a:hover,
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+}
